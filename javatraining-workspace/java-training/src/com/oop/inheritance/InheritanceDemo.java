@@ -16,7 +16,8 @@ public class InheritanceDemo {
 			p.sayHello();
 		}
 
-		// professor.getSpecialization();
+		int specialization = ((Student) professor).getYearOfStudy();
+		System.out.println(specialization);
 	}
 
 }

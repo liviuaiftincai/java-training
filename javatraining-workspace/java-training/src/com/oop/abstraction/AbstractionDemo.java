@@ -9,9 +9,8 @@ public class AbstractionDemo {
 		
 		ArraySearch arraySearch = new ArrayBinarySearch();
 		arraySearch.setArray(array);
-		arraySearch.setKey("T");
+		arraySearch.setKey("C");
 		arraySearch.search();
-		arraySearch.displayResult();
 	}
 	
 }

@@ -1,6 +1,6 @@
 package com.oop.interfaces;
 
-public class Person /* implements Comparable<Person> */ {
+public class Person implements Comparable<Person> {
 
 	private int id;
 	private String name;
@@ -53,6 +53,16 @@ public class Person /* implements Comparable<Person> */ {
 	@Override
 	public String toString() {
 		return "Person [id = " + id + ", name = " + name + "]";
+	}
+
+	@Override
+	public int compareTo(Person o) {
+		if (this.id > o.getId()) {
+			return 1;
+		} else if (this.id < o.getId()) {
+			return -1;
+		}
+		return 0;
 	}
 
 }

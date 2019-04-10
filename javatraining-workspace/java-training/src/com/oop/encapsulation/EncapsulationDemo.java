@@ -2,11 +2,11 @@ package com.oop.encapsulation;
 
 public class EncapsulationDemo {
 
-	public static void main(String[] args) throws InvalidAgeException {
+	public static void main(String[] args) {
 		// Create a person object
 		Person person = new Person();
 		person.setName("Scarlett Johansson");
-		person.setAge(34);
+//		person.setAge(34);
 		person.setGender(Gender.FEMALE);
 		person.setMarried(false);
 		person.setStreet("Madison");
@@ -18,7 +18,11 @@ public class EncapsulationDemo {
 		person.setMarried(true);
 		System.out.println(person.getName() + " has the following address: " + person.getAddress());
 		person.setMarried(false);
-		// person.setAge(150);
+		try {
+			person.setAge(150);
+		} catch (InvalidAgeException e) {
+			System.out.println("Error occured!");
+		}
 		System.out.println(person.getName() + " is " + person.getAge() + " years old.");
 
 	}

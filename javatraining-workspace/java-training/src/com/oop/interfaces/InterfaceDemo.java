@@ -1,5 +1,6 @@
 package com.oop.interfaces;
 
+import java.util.Collections;
 import java.util.List;
 
 public class InterfaceDemo {
@@ -15,18 +16,19 @@ public class InterfaceDemo {
 		personService.addPerson(person2);
 		personService.addPerson(person3);
 
-//		Person person4 = new Person(195, "Viorica Dancila");
-//		personService.updatePerson(person4);
+		Person person4 = new Person(195, "Viorica Dancila");
+		personService.updatePerson(person4);
 
-		listPersons();
+		
 
 //		Person thePerson = personService.getPerson(195);
 //		System.out.println("The person you get is: " + thePerson);
 
 //		personService.delelePerson(195);
 
-//		Collections.sort(persons);
-		
+		List<Person> persons = personService.getPersons();
+		Collections.sort(persons);
+		listPersons();
 
 	}
 

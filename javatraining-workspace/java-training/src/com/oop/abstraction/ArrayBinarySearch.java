@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayBinarySearch extends ArraySearch {
 
-	@Override
+//	@Override
 	public void search() {
 		String[] array = super.getArray();
 		Arrays.sort(array);

@@ -24,6 +24,8 @@ public class Person {
 		setStreetNumber(streetNumber);
 		setCity(city);
 	}
+	
+	
 
 	// You can change the returned value
 	public String getName() {

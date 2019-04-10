@@ -2,7 +2,7 @@ package com.oop.abstraction;
 
 public class ArrayClassicSearch extends ArraySearch {
 
-	@Override
+//	@Override
 	public void search() {
 		String[] sourceArray = super.getArray();
 		for (int i = 0; i < sourceArray.length; i++) {
